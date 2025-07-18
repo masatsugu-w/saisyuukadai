@@ -112,7 +112,7 @@ public class ReportController {
 
         // 入力チェック
         if (res.hasErrors()) {
-            return create(report,userDetail,null);
+            return create(report,null,model);
         }
 
         // 論理削除を行った従業員番号を指定すると例外となるためtry~catchで対応

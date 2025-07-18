@@ -33,7 +33,7 @@ public class ReportService {
         if(reportList!=null){
             for(Report dReport:reportList) {
                 if(dReport.getReportDate().equals(report.getReportDate())) {
-                    return ErrorKinds.DUPLICATE_ERROR;
+                    return ErrorKinds.DATECHECK_ERROR;
                     
                 }
             }
@@ -57,7 +57,7 @@ public class ReportService {
                 !bReport.getReportDate().equals(report.getReportDate())) {
             for(Report dReport:reportList) {
                 if(dReport.getReportDate().equals(report.getReportDate())) {
-                    return ErrorKinds.DUPLICATE_ERROR;
+                    return ErrorKinds.DATECHECK_ERROR;
                     
                 }
             }
